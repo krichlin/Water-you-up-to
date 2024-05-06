@@ -8,6 +8,6 @@ Get the latest version from [Our Github Repo](https://github.com/krichlin/Water-
 
 ## Run this command to start the JSON server: 
 
-json-server --watch db.json
+npm run server
 
 ###
