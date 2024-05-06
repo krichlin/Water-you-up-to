@@ -6,6 +6,8 @@ It was designed by Aaron Lin, Ken Richlin and Erin Yant.
 
 Get the latest version from [Our Github Repo](https://github.com/krichlin/Water-you-up-to)
 
-## 
+## Run this command to start the JSON server: 
+
+json-server --watch db.json
 
 ###
