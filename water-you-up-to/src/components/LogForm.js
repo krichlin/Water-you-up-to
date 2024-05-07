@@ -34,7 +34,7 @@ function LogForm() {
   return (
     <div className='row'>
       <form>
-        <h4>Log your drink!</h4>
+        <h4 style={{ marginTop: '20px' }}>Log your drink!</h4>
         <Select options={drinkOptions} onChange={(e) => console.log(e)}/>
         <p>CURRENT DATE: {showDateTime}</p>
         <button type='submit'>Submit</button>
@@ -44,3 +44,4 @@ function LogForm() {
 }
 
 export default LogForm
+

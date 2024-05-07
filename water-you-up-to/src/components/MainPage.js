@@ -10,7 +10,7 @@ function MainPage() {
     return (
       <div style={{ backgroundColor }}>
         <h1>Have You Hydrated Today?</h1>
-        <button onClick={() => setBackgroundColor('blue')}>Change Background</button>
+        <button onClick={() => setBackgroundColor('#00ffff')}>Change Background</button>
       </div>
     );
   }
