@@ -1,11 +1,26 @@
 import React, {useState, useEffect} from "react";
-import Header from './LogForm'
+import LogForm from './LogForm'
+import MainDisplay from "./MainDisplay";
 
 function MainPage() {
-    
+
+    const [listItem, setListItem] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:6001/Logs')
+        .then((res) => res.json())
+        .then((data) => {
+            setListItem(data)
+            console.log(listItem)
+        })
+      }, [])
+
     return(
-        <h1>Main Page</h1>
+        <main>
+            <LogForm />
+            <MainDisplay Logs={listItem}/>
+        </main>
     )
 }
 
-export default MainPage;
+export default MainPage
