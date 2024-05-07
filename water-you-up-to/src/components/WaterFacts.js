@@ -11,4 +11,17 @@ function WaterFacts() {
       //setFacts(data)
     })
   }, [])
+
+  return (
+    <div>
+      <ul>
+        {facts.map((fact, index) => (
+          <li key={index}>{fact}</li>
+        ))}
+      </ul>
+    </div>
+    )
+
 }
+
+export default WaterFacts;

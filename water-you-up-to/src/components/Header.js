@@ -23,7 +23,7 @@ function Header() {
                     </ul>
                 </nav>
             </div>
-
+ 
             <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="/about" element={<AboutPage />} />
@@ -35,5 +35,10 @@ function Header() {
     return hdr;
 
 }
+
+
+
+
+
 
 export default Header;

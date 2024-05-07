@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./Header"
+import Header from "./Header";
 
 function AboutPage() {
-
+    
     const ap = (        
         <div class="aboutPage">
             <h2>About US!</h2>

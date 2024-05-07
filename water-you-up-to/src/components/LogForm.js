@@ -31,14 +31,16 @@ function LogForm() {
   }, [])
 
 
-      return (
-        <form>
-          <h4>Log your drink!</h4>
-          <Select options={drinkOptions} onChange={(e) => console.log(e)}/>
-          <p>CURRENT DATE: {showDateTime}</p>
-          <button type='submit'>Submit</button>
-        </form>
-      )
+  return (
+    <div className='row'>
+      <form>
+        <h4>Log your drink!</h4>
+        <Select options={drinkOptions} onChange={(e) => console.log(e)}/>
+        <p>CURRENT DATE: {showDateTime}</p>
+        <button type='submit'>Submit</button>
+      </form>
+    </div>
+  )
 }
 
 export default LogForm
