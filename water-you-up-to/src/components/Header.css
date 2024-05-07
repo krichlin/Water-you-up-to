@@ -1,0 +1,10 @@
+.horizontal-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center; /* Add this line to center the list items horizontally */
+  }
+  
+  /* Optional: Add some spacing between list items */
+  .horizontal-list li {
+    margin-right: 50px;
+  }
