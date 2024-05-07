@@ -51,6 +51,7 @@
       "point": "1.5"
     }
   ],
+
   "Logs": [
     {
       "id": "970e",
@@ -63,6 +64,49 @@
       "name": "Water 12 oz",
       "points": "1.50",
       "date": "5/6/2024 16:3"
+    }
+    ]
+  
+  "facts": [
+    {
+      "id": 11,
+      "fact": "Water covers 71% of the Earth. 96.5% of that is ocean water."
+    },
+    {
+      "id": 12,
+      "fact": "75% of the human brain is water, and 75% of a living tree is water."
+    },
+    {
+      "id": 13,
+      "fact": "Water is the only substance on Earth that is naturally found in three forms: liquid, solid, and gas."
+    },
+    {
+      "id": 14,
+      "fact": "There is more water underground than on the surface in Canada."
+    },
+    {
+      "id": 15,
+      "fact": "The first water pipes in the US were made from hollowed logs."
+    },
+    {
+      "id": 16,
+      "fact": "A jellyfish and a cucumber are each 95% water."
+    },
+    {
+      "id": 17,
+      "fact": "It takes more than twice the amount of water to produce coffee than it does tea."
+    },
+    {
+      "id": 18,
+      "fact": "Americans drink more than one billion glasses of tap water per day."
+    },
+    {
+      "id": 19,
+      "fact": "Leaks in the NYC water supply system account for 33-37 million gallons of wasted water per day."
+    },
+    {
+      "id": 20,
+      "fact": "There are around one million miles of water pipeline and aqueducts in the US and Canada, enough to circle the globe 40 times."
     }
   ]
 }
