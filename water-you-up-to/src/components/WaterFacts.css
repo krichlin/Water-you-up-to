@@ -1,0 +1,20 @@
+.no-bullet {
+    list-style: none;
+  }
+
+  body {
+    background-image: url('https://media.istockphoto.com/id/1305242837/photo/molecular-structure-of-ozone-with-transparent-bubbles-and-blue-background.jpg?s=612x612&w=0&k=20&c=J8KYzvImvhkGTFFv1mln_urUbGX2YbTJf62XLCDoAOI=');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  ul li {
+    font-weight: bold;
+    color: black;
+    line-height: 2.5;
+  }
+
+  .enlarged-line {
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+  }
