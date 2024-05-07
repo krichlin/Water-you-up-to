@@ -30,11 +30,7 @@ function Header() {
             <Routes>
                 <Route path="/" element={<LogForm />} />
                 <Route path="/about" element={<AboutPage />} />
-<<<<<<< HEAD
                 <Route path="/waterfacts" element={<WaterFacts />} />
-=======
-                <Route path="/contact" element={<MainPage />} />
->>>>>>> c3a9a6b2bc39d98b3eb16e4e0e334c292420b136
             </Routes>
         </Router>
     )
