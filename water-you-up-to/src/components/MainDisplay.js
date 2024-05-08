@@ -3,8 +3,6 @@ import ListDisplay from './ListDisplay'
 
 function MainDisplay({Logs}) {
 
-
-
       return (
         <ul>
             <ListDisplay logs={Logs}/>

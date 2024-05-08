@@ -28,7 +28,7 @@ function Header() {
             </div>
 
             <Routes>
-                <Route path="/" element={<LogForm />} />
+                <Route path="/" element={<MainPage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/waterfacts" element={<WaterFacts />} />
             </Routes>
