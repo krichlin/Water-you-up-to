@@ -6,7 +6,7 @@ function WaterFacts() {
   const [hoveredIndex, setHoveredIndex] = useState(null); 
   
   useEffect(() => {
-    fetch('http://localhost:6001/facts')
+    fetch('https://json-server-template-tiiu.onrender.com/facts')
     .then((resp) => resp.json())
     .then((data) => {
       const filteredData = data.filter((fact) => fact.id >= 11 && fact.id <= 20);

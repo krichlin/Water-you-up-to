@@ -14,7 +14,7 @@ function LogForm() {
   let logData = {}
 
   useEffect(() => {
-    fetch('http://localhost:6001/drinks')
+    fetch('https://json-server-template-tiiu.onrender.com/drinks')
     .then((res) => res.json())
     .then((data) => {
       //console.log(data)
@@ -46,7 +46,7 @@ function LogForm() {
 
     // e.preventDefault();
 
-    fetch('http://localhost:6001/Logs', {
+    fetch('https://json-server-template-tiiu.onrender.com/Logs', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
