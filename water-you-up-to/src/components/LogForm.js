@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Select from 'react-select'
 
-
-
 function LogForm() {
 
   const [drinks, setDrinks] = useState([])
@@ -46,7 +44,7 @@ function LogForm() {
 
   function saveLog(e) {
 
-    e.preventDefault();
+    // e.preventDefault();
 
     fetch('http://localhost:6001/Logs', {
       method: 'POST',
@@ -58,7 +56,6 @@ function LogForm() {
     .then(resp => resp.json())
     .then(data => console.log(data))
   }
-
 
   return (
     <div className='row'>
@@ -73,4 +70,3 @@ function LogForm() {
 }
 
 export default LogForm
-
