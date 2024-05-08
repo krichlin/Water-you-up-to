@@ -1,0 +1,9 @@
+.horizontal-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center; 
+  }
+  
+  .horizontal-list li {
+    margin-right: 50px;
+  }
