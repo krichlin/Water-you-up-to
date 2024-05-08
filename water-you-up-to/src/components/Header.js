@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import MainPage from './MainPage';
 import AboutPage from './AboutPage';
-import LogForm from './LogForm';
 import WaterFacts from './WaterFacts';
 import { hydrateRoot } from 'react-dom/client';
 import './Header.css';

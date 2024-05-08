@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import Header from './Header.js';
 import './MainPage.css';
 
 import LogForm from './LogForm'
