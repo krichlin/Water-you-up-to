@@ -6,7 +6,7 @@ function MainDisplay() {
   const [listItem, setListItem] = useState([])
   
   useEffect(() => {
-    fetch('http://localhost:6001/Logs')
+    fetch('https://json-server-template-tiiu.onrender.com/Logs')
     .then((res) => res.json())
     .then((data) => {
         setListItem(data)
