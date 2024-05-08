@@ -5,7 +5,7 @@ function ListDisplay({logs}) {
     
     return (
         <div>
-            <h2>Beverages consumed</h2>
+            <h2>Beverages Consumed</h2>
         <ul>
             {logs.map((log) => {
                 return (
