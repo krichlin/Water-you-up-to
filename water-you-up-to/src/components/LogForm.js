@@ -19,7 +19,7 @@ function LogForm() {
     fetch('http://localhost:6001/drinks')
     .then((res) => res.json())
     .then((data) => {
-      console.log(data)
+      //console.log(data)
       //setDrinks(data)
       data.map((value) => {
         drinkOptions.push({
@@ -39,9 +39,9 @@ function LogForm() {
       "points": value,
       "date": showDateTime
     }
-    console.log(newObject)
-    logData ={...newObject}
-    console.log(logData)
+    //console.log(newObject)
+    logData = {...newObject}
+    //console.log(logData)
   }
 
   function saveLog(e) {
@@ -62,9 +62,9 @@ function LogForm() {
 
   return (
     <div className='row'>
-      <form>
+      <form onSubmit={(e) => saveLog(e)}>
         <h4 style={{ marginTop: '20px' }}>Log your drink!</h4>
-        <Select options={drinkOptions} onChange={(e) => console.log(e)}/>
+        <Select options={drinkOptions} onChange={(e) => handleEvent(e)}/>
         <p>CURRENT DATE: {showDateTime}</p>
         <button type='submit'>Submit</button>
       </form>
