@@ -10,7 +10,7 @@ function ListDisplay({logs}) {
             {logs.map((log) => {
                 return (
                     <li className="listItem" key={log.id}>
-                        <p>Drink: {log.name}</p>
+                        <p>Drink: {log.name} | Points: {log.points} | Date: {log.date}</p>
                         <p>Points: {log.points}</p>
                         <p>Date: {log.date}</p>
                     </li>
