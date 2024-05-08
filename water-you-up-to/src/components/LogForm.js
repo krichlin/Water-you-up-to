@@ -12,6 +12,8 @@ function LogForm() {
   const showDateTime = month + '/' + day + '/' + year + ' ' 
   + date.getHours() + ':' + date.getMinutes()
   let logData = {}
+  console.log(drinks);
+  console.log(setDrinks);
 
   useEffect(() => {
     fetch('https://json-server-template-tiiu.onrender.com/drinks')
@@ -31,7 +33,8 @@ function LogForm() {
   }, [])
 
   function handleEvent(e) {
-    const {key ,value, label} = e
+    const {
+      value, label} = e
     const newObject = {
       "name": label,
       "points": value,

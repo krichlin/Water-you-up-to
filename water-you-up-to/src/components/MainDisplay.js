@@ -10,7 +10,7 @@ function MainDisplay() {
     .then((res) => res.json())
     .then((data) => {
         setListItem(data)
-        console.log(listItem)
+        // console.log(listItem)
     })
   }, [])
 
