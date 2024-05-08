@@ -60,7 +60,6 @@ function LogForm() {
   }
 
 
-<<<<<<< HEAD
   return (
     <div className='row'>
       <form>
@@ -71,18 +70,6 @@ function LogForm() {
       </form>
     </div>
   )
-=======
-      return (
-        <div>
-        <form onSubmit={(e)=>saveLog(e)}>
-          <h4>Log your drink!</h4>
-          <Select name="drink" options={drinkOptions} onChange={(e) => handleEvent(e)}/>
-          <p>CURRENT DATE: {showDateTime}</p>
-          <button type='submit'>Submit</button>
-        </form>
-        </div>
-      )
->>>>>>> c3a9a6b2bc39d98b3eb16e4e0e334c292420b136
 }
 
 export default LogForm
