@@ -4,7 +4,7 @@ import Select from 'react-select'
 function LogForm() {
 
   const [drinks, setDrinks] = useState([])
-  const drinkOptions = []
+  const [drinkOptions, setDrinkOptions] = useState([])
   const date = new Date()
   const month = date.getMonth()+1
   const year = date.getFullYear()
@@ -21,14 +21,15 @@ function LogForm() {
     .then((data) => {
       //console.log(data)
       //setDrinks(data)
-      data.map((value) => {
-        drinkOptions.push({
+      const options = data.map((value) => {
+        return ({
           key: value.id,
           value: value.point,
           label: value.name
         })
         //console.log(drinkOptions)
       })
+      setDrinkOptions(options);
     })
   }, [])
 
