@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import MainPage from './MainPage';
 import AboutPage from './AboutPage';
 import WaterFacts from './WaterFacts';
-import { hydrateRoot } from 'react-dom/client';
+// import { hydrateRoot } from 'react-dom/client';
 import './Header.css';
 
 function Header() {

@@ -4,7 +4,7 @@ import Select from 'react-select'
 function LogForm() {
 
   const [drinks, setDrinks] = useState([])
-  const drinkOptions = []
+  const [drinkOptions, setDrinkOptions] = useState([])
   const date = new Date()
   const month = date.getMonth()+1
   const year = date.getFullYear()
@@ -12,6 +12,8 @@ function LogForm() {
   const showDateTime = month + '/' + day + '/' + year + ' ' 
   + date.getHours() + ':' + date.getMinutes()
   let logData = {}
+  console.log(drinks);
+  console.log(setDrinks);
 
   useEffect(() => {
     fetch('https://json-server-template-tiiu.onrender.com/drinks')
@@ -19,19 +21,21 @@ function LogForm() {
     .then((data) => {
       //console.log(data)
       //setDrinks(data)
-      data.map((value) => {
-        drinkOptions.push({
+      const options = data.map((value) => {
+        return ({
           key: value.id,
           value: value.point,
           label: value.name
         })
         //console.log(drinkOptions)
       })
+      setDrinkOptions(options);
     })
   }, [])
 
   function handleEvent(e) {
-    const {key ,value, label} = e
+    const {
+      value, label} = e
     const newObject = {
       "name": label,
       "points": value,
